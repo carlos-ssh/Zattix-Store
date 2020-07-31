@@ -58,6 +58,11 @@ span{
         width: 200px !important;
         height: auto;
     }
+    .alignment{
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
