@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0"/>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>Zattix Capstone</title>
+    </head>
+    <body>
+
+        <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-dark">
+            <i class="fas fa-warehouse text-danger fa-2x mx-2"></i> 
+            <a class="text-white font-weight-bold mt-1" href="#"> The Warehouse </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active mx-lg-3">
+                  <a class="nav-link text-secondary" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  mr-lg-3">
+                  <a class="nav-link text-secondary" href="#"><i class="fas fa-th-large"></i> Collections </a>
+                </li>
+                <li class="nav-item  mr-5">
+                  <a class="nav-link text-secondary" href="#"><i class="fas fa-shopping-cart"></i></i> Purchase List </a>
+                </li>
+
+                <li class="nav-item mr-5 ">
+                    <a class="btn btn-danger text-white font-weight-bold d-none d-lg-block" type="button">POST AN ADD</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto d-none d-lg-block d-lg-flex">
+                <li class="my-auto"><a class="messages text-secondary mx-2" href="#"><i class="fas fa-envelope"></i></a></li>
+                <li class="user-name mx-2 my-auto"><a class="text-white" href="#">John Doe</a></li>
+                <li class="user-name mx-2"><a class="text-white" href="#"><i class="fas fa-user-circle fa-2x"></i></a></li>
+              </ul>
+            </div>
+        </nav>
+
+        <header class="container-fluid col-12 bg-danger">
+            <h2 class="text-white text-center pt-3"> <i class="fas fa-warehouse text-white fa-2x mx-2"></i> The Warehouse</h2>
+            <p class="text-white text-center"> Buying And Selling Could't be Simpler than this! </p>
+            <div class="container-fluid col-12 d-flex ">
+                <div class="dropdown col-5">
+                <a class="col-12 btn btn-primary bg-white border-white text-dark my-5 dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  All Departments
+                </a>
+              
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#">Electronics</a>
+                  <a class="dropdown-item" href="#">Fashion</a>
+                  <a class="dropdown-item" href="#">Automotives</a>
+                  <a class="dropdown-item" href="#">Real State</a>
+                </div>
+                </div>
+                <form class="container form-inline col-7 mt-1  mt-md-0 ml-0 my-lg-0 d-flex">
+                    <input class="col-10 form-control mr-sm-0" type="search" placeholder="What do you search for?" aria-label="Search">
+                    <a href="search.html" class="btn btn-outline-light  ml-md-1 col-2 my-2 my-sm-0 text-white text-center" type="submit"><i class="fas fa-search"></i></a>
+                </form>
+            </div>
+        </header>
+        <main>
+
+            <!--Carousel-->
+
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active imagees">
+                    <img src="https://i.ebayimg.com/images/g/sNoAAOSwXuRe1WHS/s-l400.jpg" class="d-block w-100" alt=".sdf..">
+                    <div class="carousel-caption ml-5">
+                      <h5 class="text-left text-danger font-weight-bold ml-5">BMW 2005</h5>
+                      <p class="text-left text-secondary ml-5">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      <a class="btn btn-danger btn-md" href="#"><i class="fas fa-shopping-cart"></i></i> BUY NOW</a>
+                    </div>
+                  </div>
+                  <div class="carousel-item imagees">
+                    <img src="https://ae01.alicdn.com/kf/H602fc6d4540f4e338ff9bc4b8121ac99I/Tabletas-Deca-Core-tableta-PC-de-10-1-pulgadas-Android-1920-1200-MT6797-4G-llamada-telef.jpg" class="d-block w-100" alt="..sdfsdf.">
+                    <div class="carousel-caption ml-5">
+                        <h5 class="text-left text-danger font-weight-bold ml-5">PC 2020 32gb RAM 2tb</h5>
+                        <p class="text-left text-secondary ml-5">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <a class="btn btn-danger btn-md" href="#"><i class="fas fa-shopping-cart"></i></i> BUY NOW</a>
+                      </div>
+                  </div>
+                  <div class="carousel-item imagees">
+                    <img src="https://i.ebayimg.com/images/g/r7cAAOSwVSFfEYUe/s-l400.jpg" class="d-block w-100" alt="..sdfsdf.">
+                    <div class="carousel-caption ml-5">
+                        <h5 class="text-left text-danger font-weight-bold ml-5">Range Rover 2005</h5>
+                        <p class="text-left text-secondary ml-5">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <a class="btn btn-danger btn-md" href="#"><i class="fas fa-shopping-cart"></i></i> BUY NOW</a>
+                      </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+            <!--Electronics-->
+            <div class="container-fluid my-5 col-12">
+                    <div class="section-icons d-flex ml-4 mb-4">
+                    <img class="" src="resources/electronics.png" alt="wefrw">
+                    <div class="d-flex ">
+                        <h6 class="font-weight-bold mt-2 ml-3">Electronics</h6>
+                        <span class="ml-3 mt-2">(Computers, Tablets, Mobile Phones, Cameras and Lenses.)</span>
+                    </div>
+                    </div>
+                <div class="container-features my-xs-5 mb-md-5">
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H121fd7fb63a44c5ab04d27b076a0e5922/XGODY-Smartphone-Mate-X-6-18-9-Dual-SIM-Android-9-0-2GB-16GB-MTK6580-Quad.jpg_640x640.jpg" class="card-img-top" alt=".sdfsdf..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MateX</h5>
+                            <p class="card-text text-danger">New</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$450</p>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H65b6cccf7ae34dcb8bb2102c0659d950p/Ordenador-port-til-para-estudiantes-de-15-6-pulgadas-4GB-RAM-64GB-ROM-Intel-Celeron-N3050.jpg" class="card-img-top" alt="..sdfsdf.">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H08b89097bb06478d85efd430b1f7ab51A/M-vil-3G-xgody-a70-so-Android-8-1-tarjeta-Dual-SIM-1GB-RAM-4GB-ROM.jpg_640x640.jpg" class="card-img-top" alt="dsf..sdfsdf.">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/Haa975f5bff754d049bbcbbddfb11d334R/Tableta-Android-8-0-CARBAYTA-tableta-con-pantalla-t-ctil-de-11-6-pulgadas-PC-procesador.jpg" class="card-img-top" alt=".sdfsdfsdf..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H65b6cccf7ae34dcb8bb2102c0659d950p/Ordenador-port-til-para-estudiantes-de-15-6-pulgadas-4GB-RAM-64GB-ROM-Intel-Celeron-N3050.jpg" class="card-img-top" alt="..sdfsdf.">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="card feat-div ">
+                        <img src="https://ae01.alicdn.com/kf/H08b89097bb06478d85efd430b1f7ab51A/M-vil-3G-xgody-a70-so-Android-8-1-tarjeta-Dual-SIM-1GB-RAM-4GB-ROM.jpg_640x640.jpg" class="card-img-top" alt="sdfsdfsdf...">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H602fc6d4540f4e338ff9bc4b8121ac99I/Tabletas-Deca-Core-tableta-PC-de-10-1-pulgadas-Android-1920-1200-MT6797-4G-llamada-telef.jpg" class="mt-1 card-img-top" alt=".sdfsdfsd..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/Haa975f5bff754d049bbcbbddfb11d334R/Tableta-Android-8-0-CARBAYTA-tableta-con-pantalla-t-ctil-de-11-6-pulgadas-PC-procesador.jpg" class="card-img-top" alt=".werwer..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card feat-div d-none d-sm-block">
+                        <img src="https://ae01.alicdn.com/kf/He3c10149f136485e89ceefc2f9d951f4z/Tableta-para-ni-os-4G-LTE-1920X1200-tableta-2-5d-de-10-1-pulgadas-10-Deca.jpg" class="card-img-top" alt=".wertwert..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+
+            <!--Fashion-->
+            <div class="container-fluid my-5 col-12">
+                <div class="section-icons d-flex ml-4 mb-4">
+                    <img class="" src="resources/fashion.png" alt="wefrw">
+                    <div class="d-flex">
+                        <h6 class="font-weight-bold mt-2 ml-3">Fashion</h6>
+                        <span class="ml-3 mt-2">(Watches, Shoes, Belts, Glasses and more.)</span>
+                    </div> 
+                </div>
+                <div class="container-features my-xs-5 mb-md-5">
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H566a3a461cdc48b38b7f2bb5c56d19a0Z/Pulsera-de-plata-de-ley-a-la-moda-para-hombre-brazalete-liso-sencillo-para-hombre-y.jpg" class="card-img-top" alt=".wertwertwe..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MateX</h5>
+                            <p class="card-text text-danger">New</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$450</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H3af0d3f644b0493190219bc56cf4fe929/ONCE-vestido-tubo-ajustado-de-banda-Bodycon-Vestido-corto-de-noche-sin-mangas-para-fiesta-y.jpg" class="card-img-top" alt="wertwert...">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H6f6384679dde46e9a2f0113bccf62d89z/Vestido-corto-bohemio-a-la-moda-de-lunares-para-mujer-vestido-con-volantes-y-nudo-para.jpg" class="card-img-top" alt=".wertwert..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H1f35237a207b45af97ebfdee54f11b84Q/Personalidad-personalizada-gafas-de-dibujos-animados-de-moda-joyer-a-de-dise-o-pulsera-de-cobre.jpg" class="card-img-top" alt=".23452345..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H289aa1228cae4bc486e3f2f55f67f530I/Vestido-con-estampado-de-cadenas-para-mujer-vestido-largo-sexi-de-talle-alto-con-escote-en.jpg" class="card-img-top" alt="12345435234...">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/Hec304699b795416984777705b3f95e4c0/De-acero-inoxidable-de-los-hombres-del-encanto-de-la-joyer-a-de-oro-Color-collar.jpg" class="mt-1 card-img-top" alt="wertwert34...">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/Hf85a1b3e0e7549468112fd8347576ba3U/Anillo-g-tico-de-acero-inoxidable-estilo-Punk-Retro-para-hombre-anillo-de-fiesta-con-calavera.jpg" class="card-img-top" alt="34563456...">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="card feat-div">
+                        <img src="https://ae01.alicdn.com/kf/H6cb05b1e1edf4e85861b60cb6c970c701/Zapatos-de-trabajo-para-hombre-botas-de-seguridad-zapatos-de-malla-transpirable-antigolpes-a-prueba-de.jpg" class="card-img-top" alt="456345yt...">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card feat-div d-none d-sm-block">
+                        <div class="card feat-div border-0">
+
+                            <img src="https://ae01.alicdn.com/kf/H289aa1228cae4bc486e3f2f55f67f530I/Vestido-con-estampado-de-cadenas-para-mujer-vestido-largo-sexi-de-talle-alto-con-escote-en.jpg" class="card-img-top" alt="12345435234...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            
+            <!--Automotive-->
+            <div class="container-fluid my-5 col-12">
+                <div class="section-icons d-flex ml-5 mb-4">
+                    <i class="fas fa-car fa-2x"></i>
+                    <div class="d-flex">
+                        <h6 class="font-weight-bold mt-2 ml-3">Atomotive</h6>
+                        <span class="ml-3 mt-2">(Cars, Motors, Bikes, Trucks)</span>
+                    </div> 
+                </div>
+                <div class="container-features my-xs-5 mb-md-5">
+                    <div class="card feat-div">
+                        <img src="https://i.ebayimg.com/images/g/qjUAAOSw8j9enDnH/s-l300.jpg" class="card-img-top" alt=".wertwertwe..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">BMW</h5>
+                            <p class="card-text text-danger">New</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$4450</p>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="card feat-div">
+                            <img src="https://i.ebayimg.com/images/g/sNoAAOSwXuRe1WHS/s-l400.jpg" class="card-img-top" alt="wertwert...">
+                            <div class="card-body">
+                                <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                                <p class="card-text text-danger">Used</p>
+                                <div class="d-flex ">
+                                    <p class="card-text">From</p>
+                                    <p class=" ml-2">San Jacinto, US</p>
+    
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                    <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card feat-div">
+                            <img src="https://i.ebayimg.com/images/g/r7cAAOSwVSFfEYUe/s-l400.jpg" class="card-img-top" alt=".wertwert..">
+                            <div class="card-body">
+                                <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                                <p class="card-text text-danger">Used</p>
+                                <div class="d-flex ">
+                                    <p class="card-text">From</p>
+                                    <p class=" ml-2">San Jacinto, US</p>
+    
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                    <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card feat-div">
+                            <img src="https://i.ebayimg.com/images/g/IiEAAOSwVI1ezlIw/s-l400.jpg" class="card-img-top" alt=".23452345..">
+                            <div class="card-body">
+                                <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                                <p class="card-text text-danger">Used</p>
+                                <div class="d-flex ">
+                                    <p class="card-text">From</p>
+                                    <p class=" ml-2">San Jacinto, US</p>
+    
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                    <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card feat-div">
+                            <img src="https://i.ebayimg.com/images/g/zxsAAOSwfkpd3SmV/s-l400.jpg" class="card-img-top" alt="12345435234...">
+                            <div class="card-body">
+                                <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                                <p class="card-text text-danger">Used</p>
+                                <div class="d-flex ">
+                                    <p class="card-text">From</p>
+                                    <p class=" ml-2">San Jacinto, US</p>
+    
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                    <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card feat-div">
+                            <img src="https://i.ebayimg.com/images/g/qVcAAOSw7xZd5S3t/s-l400.jpg" class="mt-1 card-img-top" alt="wertwert34...">
+                            <div class="card-body">
+                                <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                                <p class="card-text text-danger">Used</p>
+                                <div class="d-flex ">
+                                    <p class="card-text">From</p>
+                                    <p class=" ml-2">San Jacinto, US</p>
+    
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                    <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card feat-div">
+                            <img src="https://i.ebayimg.com/images/g/5JkAAOSwRUpe8LUc/s-l400.jpg" class="card-img-top" alt="34563456...">
+                            <div class="card-body">
+                                <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                                <p class="card-text text-danger">Used</p>
+                                <div class="d-flex ">
+                                    <p class="card-text">From</p>
+                                    <p class=" ml-2">San Jacinto, US</p>
+    
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                    <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="card feat-div">
+                            <img src="https://i.ebayimg.com/images/g/wlQAAOSwGCBeZNRa/s-l400.jpg" class="card-img-top" alt="456345yt...">
+                            <div class="card-body">
+                                <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                                <p class="card-text text-danger">Used</p>
+                                <div class="d-flex ">
+                                    <p class="card-text">From</p>
+                                    <p class=" ml-2">San Jacinto, US</p>
+    
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                    <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+            </div>
+        </main>
+        
+        
+        
+        
+        
+        <!--Scripts-->        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+        <footer class="bg-white my-auto">
+            <div class="footer-container bg-white  mx-auto">
+                <div class="website-description flex ">
+                    <i class="fas fa-warehouse ml-5 my-5 text-danger fa-2x mx-2"></i> 
+                    <a class="text-secondary font-weight-bold mt-1" href="#"> The Warehouse </a>
+                    <p class="mx-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum feugiat magna, elementum porttitor turpis accumsan in. Proin vehicula lacus ut ex imperdiet, in bibendum urna ornare.</p>
+                </div>
+            
+            <div class="container-fluid d-flex">
+                <hr>
+                <div class="container-fluid justify-content-center categories">
+                    <h4 class="ml-4">Categories</h4>
+                
+                    <div class="category-list">
+                        <ul>
+                            <li><a class="text-danger " href="#">Real Estate</a></li>
+                            <li><a class="text-danger " href="#">Automotives</a></li>
+                            <li><a class="text-danger " href="#">Electronics</a></li>
+                            <li><a class="text-danger " href="#">Clothing</a></li>
+                            <li><a class="text-danger " href="#">Fashion</a></li>
+                            <li><a class="text-danger " href="#">Clothing</a></li>
+                            <li><a class="text-danger " href="#">kids</a></li>
+                            <li><a class="text-danger " href="#">Food & Drink</a></li>
+                        </ul>
+                        <ul class="d-none d-md-block">
+                            <li><a class="text-danger" href="#">Real Estate</a></li>
+                            <li><a class="text-danger" href="#">Autopmotives</a></li>
+                            <li><a class="text-danger" href="#">Electronics</a></li>
+                            <li><a class="text-danger" href="#">Clothing</a></li>
+                            <li><a class="text-danger" href="#">Fashion</a></li>
+                            <li><a class="text-danger" href="#">Clothing</a></li>
+                            <li><a class="text-danger" href="#">kids</a></li>
+                            <li><a class="text-danger" href="#">Food & Drink</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-navigation ">
+                    <h4 class="text-center">Navigation</h4>
+                    <div class="footer-navigation-lists">
+                        <ul>
+                            <li><a class="text-danger" href="#">Home</a></li>
+                            <li><a class="text-danger" href="#">Collections</a></li>
+                            <li><a class="text-danger" href="#">Help</a></li>
+                            <li><a class="text-danger" href="#">Log In</a></li>
+                            <li><a class="text-danger" href="#">Sign Up</a></li>
+                            <li><a class="text-danger" href="#">Terms & Conditions</a></li>
+                            <li><a class="text-danger" href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="container-fluid">
+                    <h5 class="text-center text-danger font-weight-bold">We Accept</h5>
+                    <ul class="container c-cards d-flex mx-auto">
+                      <li class="ml-auto">
+                        <a href="#"><i class="text-secondary fab fa-cc-mastercard"></i></a>
+                      </li>
+                      <li class="ml-auto">
+                        <a href="#"><i class="text-secondary fab fa-cc-visa"></i></a>
+                      </li>
+                      <li class="ml-auto">
+                        <a href="#"><i class="text-secondary fab fa-cc-discover"></i></a>
+                      </li>
+                      <li class="ml-auto">
+                        <a href="#"><i class="text-secondary fab fa-cc-jcb"></i></a>
+                      </li>
+                      <li class="ml-auto">
+                        <a href="#"><i class="text-secondary fab fa-cc-paypal"></i></a>
+                      </li>
+                      <li class="ml-auto">
+                        <a href="#"><i class="text-secondary fab fa-cc-amazon-pay"></i></a>
+                      </li>
+                      <li class="ml-auto">
+                        <a href="#"><i class="text-secondary fab fa-cc-amex"></i></a>
+                      </li>
+                      <li class="ml-auto">
+                        <a href="#"><i class="text-secondary fab fa-cc-apple-pay"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                <hr>
+                <div class="bottom-footer flex">
+                    <div class="copyright-text flex">
+                        <p class="text-center my-auto">
+                            Copyright © 2015 Zattix.com. All Rights Reserved. Designed by
+                            Mohammed Awad.
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

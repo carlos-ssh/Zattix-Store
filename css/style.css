@@ -1,0 +1,76 @@
+body {
+    background: #8888883a !important;
+}
+ul {
+    list-style: none;
+}
+span{
+    font-size: 10px;
+}
+
+.imagees {
+    background: #FFFFFF;
+}
+
+.imagees img{
+    width: 180px !important;
+    height: 180px !important;
+    padding: 15px;
+}
+
+.section-icons img{
+    width: 50px !important;
+    height: 30px !important;
+}
+
+.container-features {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.feat-div {
+  gap: 10px;
+  border-radius: 26px;
+  margin: 10px;
+}
+.feat-div img {
+    width: 120px;
+    height: auto;
+    margin: auto;
+    padding-top: 5px;
+}
+
+
+
+
+/*Queries*/
+
+/* Extra small devices (portrait phones, less than 576px)*/
+/* No media query since this is the default in Bootstrap*/
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .imagees img{
+        width: 200px !important;
+        height: auto;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+}
