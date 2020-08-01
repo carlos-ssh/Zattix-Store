@@ -67,7 +67,13 @@ span{
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-
+    .nav {
+        z-index: 111;
+    }
+    .nav1 {
+        overflow: auto;
+        margin-top: 80px;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
