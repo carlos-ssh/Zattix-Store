@@ -47,6 +47,9 @@ span{
 
 
 
+
+
+
 /*Queries*/
 
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -55,7 +58,7 @@ span{
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .imagees img{
-        width: 200px !important;
+        width: 200px;
         height: auto;
     }
     .alignment{
@@ -63,17 +66,35 @@ span{
         padding: 0;
         margin: 0;
     }
+    .imagees h5 {
+        padding-top: 100px;
+    }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
-    .nav {
-        z-index: 111;
+    aside {
+        display: block;
     }
-    .nav1 {
-        overflow: auto;
-        margin-top: 80px;
+
+    footer {
+        display: block;
+        border-top: 1px solid #e3e3e3;
+        z-index: 999;
     }
+    
+    .main-cont {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    .this-side {
+        position: fixed !important;
+        top: 45px !important;
+        background: #e3e3e3 !important;
+        z-index: 1;
+    }
+    
 }
 
 /* Large devices (desktops, 992px and up)*/
