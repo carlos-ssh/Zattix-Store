@@ -195,4 +195,7 @@ span {
   .inlarge {
     display: block !important;
   }
+  .innone {
+      display: none !important;
+  }
 }
