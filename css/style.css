@@ -1,35 +1,37 @@
 body {
-    background: #8888883a !important;
+  background: #8888883a !important;
 }
+
 ul {
-    list-style: none;
+  list-style: none;
 }
-span{
-    font-size: 10px;
+
+span {
+  font-size: 10px;
 }
 
 .imagees {
-    background: #FFFFFF;
+  background: #fff;
 }
 
-.imagees img{
-    width: 180px !important;
-    height: 180px !important;
-    padding: 15px;
+.imagees img {
+  width: 180px !important;
+  height: 180px !important;
+  padding: 15px;
 }
 
-.section-icons img{
-    width: 50px !important;
-    height: 30px !important;
+.section-icons img {
+  width: 50px !important;
+  height: 30px !important;
 }
 
 .container-features {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .feat-div {
@@ -37,17 +39,18 @@ span{
   border-radius: 26px;
   margin: 10px;
 }
+
 .feat-div img {
-    width: 120px;
-    height: auto;
-    margin: auto;
-    padding-top: 5px;
+  width: 120px;
+  height: auto;
+  margin: auto;
+  padding-top: 5px;
 }
 
 .this-container {
-    position: relative;
-    left: 600px; 
-    top: 270px;   
+  position: relative;
+  left: 600px;
+  top: 270px;
 }
 
 .brand-filter h3,
@@ -117,78 +120,79 @@ span{
   align-self: center;
 }
 
+/* Queries */
 
-/*Queries*/
+/* Extra small devices (portrait phones, less than 576px) */
 
-/* Extra small devices (portrait phones, less than 576px)*/
-/* No media query since this is the default in Bootstrap*/
+/* No media query since this is the default in Bootstrap */
 
-/* Small devices (landscape phones, 576px and up)*/
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-    .this-side {
-        display: grid;
-        top: 45px !important;
-        background: #e3e3e3 !important;
-        z-index: 1;
-    }
-    
-    .imagees img{
-        width: 200px;
-        height: auto;
-    }
-    .alignment{
-        display: flex;
-        padding: 0;
-        margin: 0;
-    }
-    .imagees h5 {
-        padding-top: 100px;
-    }
+  .this-side {
+    display: grid;
+    top: 45px !important;
+    background: #e3e3e3 !important;
+    z-index: 1;
+  }
 
-    .inlarge {
-        display: none !important;
-    }
+  .imagees img {
+    width: 200px;
+    height: auto;
+  }
+
+  .alignment {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+
+  .imagees h5 {
+    padding-top: 100px;
+  }
+
+  .inlarge {
+    display: none !important;
+  }
 }
 
-/* Medium devices (tablets, 768px and up)*/
+/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    
-    aside {
-        display: block;
-    }
+  aside {
+    display: block;
+  }
 
-    footer {
-        display: block;
-        border-top: 1px solid #e3e3e3;
-        z-index: 999;
-    }
-    
-    .main-cont {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-    }
+  footer {
+    display: block;
+    border-top: 1px solid #e3e3e3;
+    z-index: 999;
+  }
 
-    .this-side {
-        position: fixed !important;
-        top: 45px !important;
-        z-index: 1;
-    }
+  .main-cont {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
 
-    .inlarge {
-        display: none !important;
-    }
+  .this-side {
+    position: fixed !important;
+    top: 45px !important;
+    z-index: 1;
+  }
+
+  .inlarge {
+    display: none !important;
+  }
 }
-/* Large devices (desktops, 992px and up)*/
+
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
-    .inlarge {
-        display: block !important;
-    }
+  .inlarge {
+    display: block !important;
+  }
 }
 
-/* Extra large devices (large desktops, 1200px and up)*/
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-    .inlarge {
-        display: block !important;
-    }
+  .inlarge {
+    display: block !important;
+  }
 }
