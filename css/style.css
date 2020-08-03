@@ -148,7 +148,6 @@ span{
     .inlarge {
         display: none !important;
     }
-
 }
 
 /* Medium devices (tablets, 768px and up)*/
@@ -178,24 +177,18 @@ span{
     .inlarge {
         display: none !important;
     }
-
-    
 }
-
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
 
     .inlarge {
         display: block !important;
     }
-
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-
     .inlarge {
         display: block !important;
     }
-
 }
