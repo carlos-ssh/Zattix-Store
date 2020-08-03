@@ -186,7 +186,11 @@ span {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .inlarge {
-    display: block !important;
+    display: none !important;
+  }
+
+  .innone {
+    display: none !important;
   }
 }
 
@@ -196,7 +200,8 @@ span {
     display: block !important;
   }
 
-  .innone {
-    display: none !important;
+  .icon-section {
+      padding-left: 35px !important;
   }
+
 }
