@@ -1,5 +1,9 @@
 body {
-  background: #8888883a !important;
+  background: #8888883a;
+}
+
+main {
+  background: #8888883a;
 }
 
 ul {
@@ -15,14 +19,14 @@ span {
 }
 
 .imagees img {
-  width: 180px !important;
-  height: 180px !important;
+  width: 180px;
+  height;
   padding: 15px;
 }
 
 .section-icons img {
-  width: 50px !important;
-  height: 30px !important;
+  width: 50px;
+  height: 30px;
 }
 
 .container-features {
@@ -130,8 +134,8 @@ span {
   .this-side {
     display: -ms-grid;
     display: grid;
-    top: 45px !important;
-    background: #e3e3e3 !important;
+    top: 45px;
+    background: #e3e3e3;
     z-index: 1;
   }
 
@@ -151,7 +155,7 @@ span {
   }
 
   .inlarge {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -168,13 +172,13 @@ span {
   }
 
   .this-side {
-    position: fixed !important;
-    top: 45px !important;
+    position: fixed;
+    top: 45px;
     z-index: 1;
   }
 
   .inlarge {
-    display: none !important;
+    display: none;
   }
 }
 
@@ -182,17 +186,17 @@ span {
 @media (min-width: 992px) {
   .inlarge,
   .innone {
-    display: none !important;
+    display: none;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .inlarge {
-    display: block !important;
+    display: block;
   }
 
   .icon-section {
-    padding-left: 35px !important;
+    padding-left: 35px;
   }
 }
