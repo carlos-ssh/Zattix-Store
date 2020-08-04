@@ -2,9 +2,9 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="css/style.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" crossorigin="anonymous">
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <title>Zattix Capstone</title>
@@ -14,7 +14,7 @@
         <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-dark">
             <i class="fas fa-warehouse text-danger fa-2x mx-2"></i> 
             <a class="text-white font-weight-bold mt-1" href="#"> The Warehouse </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
               <span class="navbar-toggler-icon"></span>
             </button>
           
@@ -35,9 +35,15 @@
                 </li>
               </ul>
               <ul class="navbar-nav ml-auto d-none d-lg-block d-lg-flex">
-                <li class="my-auto"><a class="messages text-secondary mx-2" href="#"><i class="fas fa-envelope"></i></a></li>
-                <li class="user-name mx-2 my-auto"><a class="text-white" href="#">John Doe</a></li>
-                <li class="user-name mx-2"><a class="text-white" href="#"><i class="fas fa-user-circle fa-2x"></i></a></li>
+                <li class="my-auto">
+                    <i class="text-white fas fa-envelope"></i>
+                </li>
+                <li class="user-name mx-2 my-auto">
+                    <a class="text-white" href="#">John Doe</a>
+                </li>
+                <li class="user-name mx-2">
+                    <i class="text-white fas fa-user-circle fa-2x"></i>
+                </li>
               </ul>
             </div>
         </nav>
@@ -61,7 +67,7 @@
             </div>
             <div class="container col-7 ml-md-0 my-lg-0 d-flex d-md-flex">
                 <input class="col-10 form-control mr-sm-2 pl-1" type="search" placeholder="What do you search for?" aria-label="Search">
-                <a href="search.html" class="btn btn-outline-light col-2 my-sm-0 text-white text-center"><i class="fas fa-search"></i></a>
+                <a href="search.html" class="btn btn-outline-light col-2 my-sm-0 text-white text-center">Search <i class="fas fa-search"></i></a>
             </div>
         </div>
         </header>

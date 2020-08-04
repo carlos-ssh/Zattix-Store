@@ -76,8 +76,7 @@ span {
 
 .product-section {
   background-color: #f0f0f0;
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  display: flex;
   gap: 10px;
   padding: 25px 20px 10px 20px;
   color: #888;
@@ -129,6 +128,7 @@ span {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .this-side {
+    display: -ms-grid;
     display: grid;
     top: 45px !important;
     background: #e3e3e3 !important;
@@ -165,11 +165,6 @@ span {
     display: block;
     border-top: 1px solid #e3e3e3;
     z-index: 999;
-  }
-
-  .main-cont {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
   }
 
   .this-side {
