@@ -130,6 +130,24 @@ span {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 425px) {
+  .fas {
+    max-width: 576px;
+  }
+
+  .this-none input{
+    width: 80px;
+    height: 23px;
+    margin: auto;
+    max-width: 576px;
+  }
+
+  .themini a{
+    font-size: 6px;
+    margin: auto;
+    max-width: 576px;
+  }
+}
 @media (min-width: 576px) {
   .this-side {
     display: -ms-grid;
