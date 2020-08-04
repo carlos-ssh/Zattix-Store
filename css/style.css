@@ -135,19 +135,20 @@ span {
     max-width: 576px;
   }
 
-  .this-none input{
+  .this-none input {
     width: 80px;
     height: 23px;
     margin: auto;
     max-width: 576px;
   }
 
-  .themini a{
+  .themini a {
     font-size: 6px;
     margin: auto;
     max-width: 576px;
   }
 }
+
 @media (min-width: 576px) {
   .this-side {
     display: -ms-grid;
