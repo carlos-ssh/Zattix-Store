@@ -18,7 +18,7 @@ MORE TOOLS
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/carlos-ssh/Zattix-Store/132ca450851a65b0891a34a5a9163924b7d5bc52/index.html)
+[Live Demo Link](https://rawcdn.githack.com/carlos-ssh/Zattix-Store/bdae307422ccbddd8d2f649e48e9aa7f0e2db520/index.html)
 
 
 ## Getting Started
