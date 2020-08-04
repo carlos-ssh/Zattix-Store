@@ -27,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 git clone [Repository](https://github.com/carlos-ssh/Zattix-Store.git) Open the index.html with your favorite browser Explore the website
 
 ## Video Demostrating
-Here is the Video -> [VIDEO](https://www.loom.com/share/f4ac9aa61afd4abcb29cc7787a2f4dfe)
+Here is the Video -> [VIDEO](https://www.loom.com/share/ed6695bc4ec540ae9085f1c51c955c55)
 
 ## Usage
 
