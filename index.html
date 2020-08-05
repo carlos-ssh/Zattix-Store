@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" crossorigin="anonymous">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>Zattix Capstone</title>
+    </head>
+    <body>
+
+        <nav class="sticky-top navbar navbar-expand-lg navbar-light bg-dark">
+            <i class="fas fa-warehouse text-danger fa-2x mx-2"></i> 
+            <a class="text-white font-weight-bold mt-1" href="#"> The Warehouse </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active mx-lg-3">
+                  <a class="nav-link text-secondary" href="#"><i class="fas fa-home"></i> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  mr-lg-3">
+                  <a class="nav-link text-secondary" href="#"><i class="fas fa-th-large"></i> Collections </a>
+                </li>
+                <li class="nav-item  mr-5">
+                  <a class="nav-link text-secondary" href="#"><i class="fas fa-shopping-cart"></i> Purchase List </a>
+                </li>
+
+                <li class="nav-item mr-5 ">
+                    <a class="btn btn-danger text-white font-weight-bold d-none d-lg-block">POST AN ADD </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-auto d-none d-lg-block d-lg-flex">
+                <li class="my-auto">
+                    <i class="text-white fas fa-envelope"></i>
+                </li>
+                <li class="user-name mx-2 my-auto">
+                    <a class="text-white" href="#">John Doe</a>
+                </li>
+                <li class="user-name mx-2">
+                    <i class="text-white fas fa-user-circle fa-2x"></i>
+                </li>
+              </ul>
+            </div>
+        </nav>
+
+        <header class="container-fluid col-12 bg-danger themini">
+            <div class="">
+                <h2 class="text-white row h-100 justify-content-center align-items-center text-center text-md-left pt-3"> <i class="fas fa-warehouse text-white fa-2x mx-2"></i> The Warehouse</h2>
+                <p class="text-white row h-100 justify-content-center align-items-center text-center text-md-left "> Buying & Selling Couldn't be Simple than This! </p>
+            </div>
+            <div class="container-fluid col-12 d-flex pb-3 alignment mt-5 mb-2 mx-md-auto pb-sm-3 d-xs-flex this-none">
+
+                <div class="dropdown col-5 col-md-4 themini d-flex d-xs-flex themini mx-auto">
+                    <a class="col-12 btn btn-primary bg-white border-white text-dark dropdown-toggle mx-auto" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Select
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">Electronics</a>
+                    <a class="dropdown-item" href="#">Fashion</a>
+                    <a class="dropdown-item" href="#">Automotives</a>
+                    <a class="dropdown-item" href="#">Real State</a>
+                    </div>
+                </div>
+
+                <div class="container col-7 ml-md-0 my-lg-0 d-flex d-md-flex d-flex col-xs-3 d-xs-flex">
+                    <input class="col-10 form-control mr-sm-2 pl-1 this-none" type="search" placeholder="What do you search for?" aria-label="Search">
+                    <a href="search.html" class="btn btn-outline-light col-2 my-sm-0 text-white text-center"> <i class="fas fa-search mx-auto"></i></a>
+                </div>
+            </div>
+        </header>
+        <main>
+
+            <!--Carousel-->
+
+            <div class="container-fluid">
+                <div id="demo" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="card bg-white">
+                                <div class="mx-auto d-block"><a href="#" class="font-weight-bold text-dark d-block mx-auto my-3"> HOT ADS</a> </div>
+                                <div class="row bg-white">
+                                    <div class="col-md-6 text-center align-self-center"> 
+                                        <img class="img-fluid" src="https://i.ebayimg.com/images/g/sNoAAOSwXuRe1WHS/s-l400.jpg" alt="wheel"> 
+                                    </div>
+                                    <div class="col-md-6 info">
+                                        <div class="row title">
+                                            <div class="col">
+                                                <h3 class="text-danger font-weight-bold mx-2 mt-3">BMW 2005</h3>
+                                            </div>
+                                            <div class="col text-right">
+                                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                                            </div>
+                                        </div>
+                                        <p class="mx-2"> Nulla vitae elit libero, a pharetra augue mollis interdumLorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum feugiat magna, elementum porttitor turpis accumsan in. Proin vehicula lacus ut ex imperdiet, in bibendum urna ornare.</p>
+                                        <p class="mx-2"><b>By</b> Jaime Duende</p>
+                                        <p class="mx-2"><b>Location</b> San Fransisco California</p> 
+                                        
+                                        <span class="ml-3 fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star-half-full"></span> 
+                                        <span class="reviews">1590 Reviews</span>
+
+                                        <div class="text-danger ml-3"> <p>$4500</p>
+                                        <div class="col text-center mb-4 align-self-center">
+                                            <a class="btn btn-danger btn-md" href="#">
+                                                <i class="fas fa-shopping-cart"></i> BUY NOW</a>
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row lower">
+                                        <div class="col"> 
+                                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                                <i class="fa fa-arrow-left"></i>
+                                            </a> 
+                                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a> 
+                                        </div>              
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card bg-white">
+                                <div class="d-block mx-auto"><a href="#" class="font-weight-bold text-dark d-block mx-auto my-3"> HOT ADS</a> </div>
+                                <div class="row bg-white">
+                                    <div class="col-md-6 text-center align-self-center"> 
+                                        <img class="img-fluid w-50" src="https://ae01.alicdn.com/kf/H602fc6d4540f4e338ff9bc4b8121ac99I/Tabletas-Deca-Core-tableta-PC-de-10-1-pulgadas-Android-1920-1200-MT6797-4G-llamada-telef.jpg" alt="wheel"> 
+                                    </div>
+                                    <div class="col-md-6 info">
+                                        <div class="row title">
+                                            <div class="col">
+                                                <h3 class="text-danger font-weight-bold ml-3">Tablet Android 128GB 4RAM 13"</h3>
+                                            </div>
+                                            <div class="col text-right">
+                                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                                            </div>
+                                        </div>
+                                        <p class="ml-3"> Nulla vitae elit libero, a pharetra augue mollis interdumLorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum feugiat magna, elementum porttitor turpis accumsan in. Proin vehicula lacus ut ex imperdiet, in bibendum urna ornare.</p>
+                                        <p class="ml-3"><b>By</b> Jaime Duende</p>
+                                        <p class="ml-3"><b>Location</b> San Fransisco California</p> 
+                                        
+                                        <span class="ml-3 fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star-half-full"></span> 
+                                        <span class="reviews">1590 Reviews</span>
+
+                                        <div class="text-danger ml-3"> <p>$4500</p>
+                                        <div class="col text-center mb-4 align-self-center">
+                                            <a class="btn btn-danger btn-md" href="#">
+                                                <i class="fas fa-shopping-cart"></i> BUY NOW</a>
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row lower">
+                                        <div class="col"> 
+                                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                                <i class="fa fa-arrow-left"></i>
+                                            </a> 
+                                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a> 
+                                        </div>              
+                                    </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="card bg-white">
+                                <div class="d-block mx-auto"><a href="#" class="font-weight-bold text-dark d-block mx-auto my-3"> HOT ADS</a> </div>
+                                <div class="row bg-white">
+                                    <div class="col-md-6 text-center align-self-center"> 
+                                        <img class="img-fluid" src="https://i.ebayimg.com/images/g/r7cAAOSwVSFfEYUe/s-l400.jpg" alt="wheel"> 
+                                    </div>
+                                    <div class="col-md-6 info">
+                                        <div class="row title">
+                                            <div class="col">
+                                                <h3 class="text-danger font-weight-bold ml-3 col-12">Range Rover 2005</h3>
+                                            </div>
+                                            <div class="col text-right">
+                                                <a href="#"><i class="fa fa-heart-o"></i></a>
+                                            </div>
+                                        </div>
+                                        <p class="ml-3"> Nulla vitae elit libero, a pharetra augue mollis interdumLorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elementum feugiat magna, elementum porttitor turpis accumsan in. Proin vehicula lacus ut ex imperdiet, in bibendum urna ornare.</p>
+                                        <p class="ml-3"><b>By</b> Jaime Duende</p>
+                                        <p class="ml-3"><b>Location</b> San Fransisco California</p> 
+                                        
+                                        <span class="ml-3 fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star checked"></span> 
+                                        <span class="fa fa-star-half-full"></span> 
+                                        <span class="reviews">1590 Reviews</span>
+
+                                        <div class="text-danger ml-3"> <p>$4500</p>
+                                        <div class="col text-center mb-4 align-self-center">
+                                            <a class="btn btn-danger btn-md" href="#">
+                                                <i class="fas fa-shopping-cart"></i> BUY NOW</a>
+                                        </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row lower">
+                                        <div class="col"> 
+                                            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                                <i class="fa fa-arrow-left"></i>
+                                            </a> 
+                                            <a class="carousel-control-next" href="#demo" data-slide="next">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </a> 
+                                        </div>              
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+
+            <!--Electronics-->
+            <div class="container-fluid my-5 col-12">
+                <div class="section-icons d-flex ml-4 mb-4 icon-section">
+                    <img class="" src="resources/electronics.png" alt="wefrw">
+                    <div class="d-flex ">
+                        <h6 class="font-weight-bold mt-2 ml-3">Electronics</h6>
+                        <span class="ml-3 mt-2">(Computers, Tablets, Mobile Phones, Cameras and Lenses.)</span>
+                    </div>
+                </div>
+                <div class="container-features my-xs-5 mb-md-5">
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                        <img src="https://ae01.alicdn.com/kf/H121fd7fb63a44c5ab04d27b076a0e5922/XGODY-Smartphone-Mate-X-6-18-9-Dual-SIM-Android-9-0-2GB-16GB-MTK6580-Quad.jpg_640x640.jpg" class="card-img-top d-block mx-auto" alt=".sdfsdf..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MateX</h5>
+                            <p class="card-text text-danger">New</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$450</p>
+    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                        <img src="https://ae01.alicdn.com/kf/H65b6cccf7ae34dcb8bb2102c0659d950p/Ordenador-port-til-para-estudiantes-de-15-6-pulgadas-4GB-RAM-64GB-ROM-Intel-Celeron-N3050.jpg" class="card-img-top d-block mx-auto" alt="..sdfsdf.">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                        <img src="https://ae01.alicdn.com/kf/H08b89097bb06478d85efd430b1f7ab51A/M-vil-3G-xgody-a70-so-Android-8-1-tarjeta-Dual-SIM-1GB-RAM-4GB-ROM.jpg_640x640.jpg" class="card-img-top d-block mx-auto" alt="dsf..sdfsdf.">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                        <img src="https://ae01.alicdn.com/kf/Haa975f5bff754d049bbcbbddfb11d334R/Tableta-Android-8-0-CARBAYTA-tableta-con-pantalla-t-ctil-de-11-6-pulgadas-PC-procesador.jpg" class="card-img-top d-block mx-auto" alt=".sdfsdfsdf..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+    
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                            </div>
+                        </div>
+                    </div>
+  
+                </div>
+            </div>
+
+
+            <!--Fashion-->
+            <div class="container-fluid my-5 col-12">
+                <div class="section-icons d-flex ml-4 mb-4 icon-section">
+                    <img class="" src="resources/fashion.png" alt="wefrw">
+                    <div class="d-flex">
+                        <h6 class="font-weight-bold mt-2 ml-3">Fashion</h6>
+                        <span class="ml-3 mt-2">(Watches, Shoes, Belts, Glasses and more.)</span>
+                    </div> 
+                </div>
+
+                <div class="container-features my-xs-5 mb-md-5">
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                        <img src="https://ae01.alicdn.com/kf/H566a3a461cdc48b38b7f2bb5c56d19a0Z/Pulsera-de-plata-de-ley-a-la-moda-para-hombre-brazalete-liso-sencillo-para-hombre-y.jpg" class="card-img-top d-block mx-auto" alt=".wertwertwe..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MateX</h5>
+                            <p class="card-text text-danger">New</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$450</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                        <img src="https://ae01.alicdn.com/kf/H3af0d3f644b0493190219bc56cf4fe929/ONCE-vestido-tubo-ajustado-de-banda-Bodycon-Vestido-corto-de-noche-sin-mangas-para-fiesta-y.jpg" class="card-img-top d-block mx-auto" alt="wertwert...">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                        <img src="https://ae01.alicdn.com/kf/H6f6384679dde46e9a2f0113bccf62d89z/Vestido-corto-bohemio-a-la-moda-de-lunares-para-mujer-vestido-con-volantes-y-nudo-para.jpg" class="card-img-top d-block mx-auto" alt=".wertwert..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                        <img src="https://ae01.alicdn.com/kf/H1f35237a207b45af97ebfdee54f11b84Q/Personalidad-personalizada-gafas-de-dibujos-animados-de-moda-joyer-a-de-dise-o-pulsera-de-cobre.jpg" class="card-img-top d-block mx-auto" alt=".23452345..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                            <p class="card-text text-danger">Used</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$150</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <!--Automotive-->
+            <div class="container-fluid my-5 col-12">
+                <div class="section-icons d-flex ml-5 mb-4 icon-section">
+                    <i class="fas fa-car fa-2x"></i>
+                    <div class="d-flex">
+                        <h6 class="font-weight-bold mt-2 ml-3">Atomotive</h6>
+                        <span class="ml-3 mt-2">(Cars, Motors, Bikes, Trucks)</span>
+                    </div> 
+                </div>
+
+                <div class="container-features my-xs-5 mb-md-5">
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                        <img src="https://i.ebayimg.com/images/g/qjUAAOSw8j9enDnH/s-l300.jpg" class="card-img-top d-block mx-auto" alt=".wertwertwe..">
+                        <div class="card-body">
+                            <h5 class="card-title  font-weight-strong">BMW</h5>
+                            <p class="card-text text-danger">New</p>
+                            <div class="d-flex ">
+                                <p class="card-text">From</p>
+                                <p class=" ml-2">San Jacinto, US</p>
+                            </div>
+                            <div class="d-flex justify-content-between">
+                                <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                <p class="text-danger font-weight-bold mt-2">$4450</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                            <img src="https://i.ebayimg.com/images/g/sNoAAOSwXuRe1WHS/s-l400.jpg" class="card-img-top d-block mx-auto" alt="wertwert...">
+                            <div class="card-body">
+                                <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                                <p class="card-text text-danger">Used</p>
+                                <div class="d-flex ">
+                                    <p class="card-text">From</p>
+                                    <p class=" ml-2">San Jacinto, US</p>
+    
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                    <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                                </div>
+                            </div>
+                    </div> 
+
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                            <img src="https://i.ebayimg.com/images/g/r7cAAOSwVSFfEYUe/s-l400.jpg" class="card-img-top d-block mx-auto" alt=".wertwert..">
+                            <div class="card-body">
+                                <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                                <p class="card-text text-danger">Used</p>
+                                <div class="d-flex ">
+                                    <p class="card-text">From</p>
+                                    <p class=" ml-2">San Jacinto, US</p>
+    
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                    <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                                </div>
+                            </div>
+                    </div> 
+
+                    <div class="container-fluid bg-white mx-auto border feat-div col-sm-5 col-md-3">
+                            <img src="https://i.ebayimg.com/images/g/IiEAAOSwVI1ezlIw/s-l400.jpg" class="card-img-top d-block mx-auto" alt=".23452345..">
+                            <div class="card-body">
+                                <h5 class="card-title  font-weight-strong">Smrtphone MTTX</h5>
+                                <p class="card-text text-danger">Used</p>
+                                <div class="d-flex ">
+                                    <p class="card-text">From</p>
+                                    <p class=" ml-2">San Jacinto, US</p>
+    
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <a href="#" class="btn btn-white border my-auto"><i class="fas fa-plus text-secondary"></i></a>
+                                    <p class="text-danger font-weight-bold mt-2">$150</p>
+    
+                                </div>
+                            </div>
+                    </div> 
+
+                </div>
+            </div>
+        </main>   
+        
+        <!--Scripts-->        
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+        <!-- Footer -->
+        <footer class="page-footer font-small bg-white stylish-color-dark pt-4">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <div class="col-md-4 mx-auto">
+  
+                  
+          <a class="text-secondary font-weight-bold mt-1" href="#"><i class="fas fa-warehouse my-5 text-danger fa-2x mx-2"></i>  The Warehouse </a>
+          <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 mx-auto">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-danger">Categories</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-dark" href="#">Real Estate</a>
+            </li>
+            <li>
+              <a class="text-dark" href="#">Automotives</a>
+            </li>
+            <li>
+              <a class="text-dark" href="#">Electronics</a>
+            </li>
+            <li>
+              <a class="text-dark" href="#">Clothing</a>
+            </li>
+          </ul>
+  
+        </div>
+
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+
+        <div class="col-md-2 mx-auto">
+  
+
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-danger">More</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-dark" href="#">Fashion</a>
+            </li>
+            <li>
+              <a class="text-dark" href="#">Clothing</a>
+            </li>
+            <li>
+              <a class="text-dark" href="#">Food & Drinks</a>
+            </li>
+            <li>
+              <a class="text-dark" href="#">Kids</a>
+            </li>
+          </ul>
+  
+        </div>
+
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+
+        <div class="col-md-2 mx-auto">
+  
+          <h5 class="font-weight-bold text-uppercase mt-3 mb-4 text-danger">Help</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a class="text-dark" href="">Help</a>
+            </li>
+            <li>
+              <a class="text-dark" href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a class="text-dark" href="#">FAQ</a>
+            </li>
+            <li>
+              <a class="text-dark" href="#">Contact Us</a>
+            </li>
+          </ul>
+  
+        </div>
+
+  
+      </div>
+
+  
+    </div>
+
+  
+    <hr>
+     <p class="text-center footer-copyright py-3">
+        Copyright © 2015 Zattix.com. All Rights Reserved. Designed by Mohammed Awad.
+      </p>
+
+  
+        </footer>
+    </body>
+</html>
